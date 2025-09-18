@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* HERO SECTION */
+.hero-section {
+  /* background: #fde8d7; */
+  background-image: url("https://source.unsplash.com/1200x400/?mental,health");
+  background-size: cover;
+  background-position: center;
+  color: #222;
+  padding: 80px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* CARDS */
+.feature-card, .resource-card, .testimonial {
+  background: #fff;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.feature-card:hover, .resource-card:hover, .testimonial:hover {
+  transform: translateY(-5px);
+}
+.custom-feature-card {
+  min-height: 320px;
+  min-width: 100%;
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  .custom-feature-card {
+    min-height: 380px;
+    min-width: 100%;
+  }
+}
+
+/* FOOTER */
+/* Footer Section */
+.footer-section a {
+  text-decoration: none;
+  color: #0c3d36;
+  font-size: 14px;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+
+.support-card h4 {
+  line-height: 1.5;
+}
+.support-card .btn {
+  border-radius: 50px;
+}
+/* Footer Section */
+.support-card {
+  background-color: #006400; /* dark green background */
+  border-radius: 20px;
+  color: #fff;
+}
+/* ----------logo line section---------- */
+#logo-line {
+    background-color: #f8f9fa;
+    padding: 25px;
+    
+}
