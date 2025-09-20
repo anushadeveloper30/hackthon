@@ -1,67 +1,371 @@
-body {
-  font-family: 'Arial', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+.nav-item .nav-link{
+    color: #00373E;
+}
+#hero{
+    border-radius: 70px;
+    padding: 50px;
+    margin: 20px auto;
+    width: 90%;
+    background: #F9E6D0; 
+    color: #00373E;
+}
+.btn{
+    background: #00373E;
+    color: white;
+    font-weight: bold;
+    border-radius: 70px;
+    padding: 10px 30px;
+}
+ /* .rounded-60 { 
+      border-radius: 60% !important;
+} */
 
-/* HERO SECTION */
-.hero-section {
-  /* background: #fde8d7; */
-  background-image: url("https://source.unsplash.com/1200x400/?mental,health");
-  background-size: cover;
-  background-position: center;
-  color: #222;
-  padding: 80px 20px;
-  border-radius: 20px;
-  margin-top: 20px;
+.rounded-20 {
+  border-radius: 20%;
 }
-
-/* CARDS */
-.feature-card, .resource-card, .testimonial {
-  background: #fff;
-  border-radius: 12px;
-  transition: 0.3s;
+.text-green {
+  color: #00373E !important;
 }
-.feature-card:hover, .resource-card:hover, .testimonial:hover {
-  transform: translateY(-5px);
+.btn-outline-green {
+  border: 2px solid #00373E;
+  color: #00373E;
+  background: transparent;
+  transition: all 0.3s ease;
 }
-.custom-feature-card {
-  min-height: 320px;
-  min-width: 100%;
-  font-size: 1.2rem;
-}
-@media (min-width: 768px) {
-  .custom-feature-card {
-    min-height: 380px;
-    min-width: 100%;
-  }
-}
-
-/* FOOTER */
-/* Footer Section */
-.footer-section a {
-  text-decoration: none;
-  color: #0c3d36;
-  font-size: 14px;
-}
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-
-.support-card h4 {
-  line-height: 1.5;
-}
-.support-card .btn {
-  border-radius: 50px;
-}
-/* Footer Section */
-.support-card {
-  background-color: #006400; /* dark green background */
-  border-radius: 20px;
+.btn-outline-green:hover {
+  background: #00373E;
   color: #fff;
 }
+.custom-card {
+  padding: 3rem 2.5rem !important;
+}
+.arrow-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;          
+  height: 50px;
+  border-radius: 50%;   
+  font-size: 24px;      
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.arrow-left {
+  background-color: #00373E;  
+  color: #fff;                 
+}
+.arrow-right {
+  background-color: #E6F4F1;  
+  color: #00373E;            
+}
+.arrow-btn:hover {
+  transform: scale(1.1);
+}
+#mycard{
+    height: 393px;
+    width: 393px;
+    top: 3106px;
+    left: 740px;
+    border-radius: 60px;
+    background-color: #00373E;
+}
+.text-teal {
+  color: #00373E;
+}
+
+.testimonial-card {
+  min-height: 180px;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.pink-card {
+  background-color: #F9E6D0;
+}
+.blue-card {
+  background-color: #00373E;
+}
+
 /* ----------logo line section---------- */
-#logo-line {
+/* #logo-line {
     background-color: #f8f9fa;
     padding: 25px;
     
+} */
+ #logo-line {
+    background-color: white;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo-line img {
+    height: 80px;         
+    object-fit: contain;   
+    display: block;       
+    margin: 0 auto;        
+}
+#logo-line img[alt="logo"][src*="image copy 8"] {
+    height: 70px;   
+}  
+
+/*  */
+#three-cards {
+    left: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.my-card {
+    width: 387px;
+    height: 404px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.my-card h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00373E;
+    margin-bottom: 20px;
+}
+
+.my-card p {
+    font-size: 1.2rem;
+    color: #00373E;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.my-card button {
+    padding: 15px 30px;
+    border-radius: 40px; 
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card1 { background-color: white; }
+.card2 { background-color: white; }
+.card3 { background-color: white; }
+/* faq */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+}
+
+.faq-section {
+  background: #fff;
+}
+
+.help-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00373E;
+  letter-spacing: 1px;
+}
+
+.faq-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.faq-subtitle {
+  font-size: 16px;
+  color: #00373E;
+  margin-bottom: 20px;
+}
+
+.faq-img {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f5f9ff;
+  color: #007bff;
+  font-weight: 600;
+}
+
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 20px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Form Styling */
+.contact-form {
+  background: #fafafa;
+  border-radius: 15px;
+}
+
+.contact-form .form-control {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-form button {
+  border-radius: 30px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+}
+/* cards */
+body{
+  background:#f7f6f4;
+  font-family:'Inter',sans-serif;
+}
+
+.info-card{
+  background:#ffffff;
+  border-radius:20px;
+  padding:2.5rem;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+.info-card h4{
+  color:#024b42;
+  font-weight:600;
+  margin-bottom:1.5rem;
+}
+.info-links a{
+  display:block;
+  color:#033d36;
+  text-decoration:none;
+  margin-bottom:.5rem;
+  font-size:0.95rem;
+  transition:color .2s;
+}
+.info-links a:hover{color:#048271;}
+
+.banner-card{
+  background:#024b42;
+  border-radius:20px;
+  color:#ffffff;
+  padding:2.5rem;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+.banner-card h2{
+  font-weight:600;
+  margin-bottom:2rem;
+  max-width:250px;
+}
+.banner-btn{
+  background:#ffffff;
+  color:#024b42;
+  border-radius:30px;
+  padding:.79rem 2.80rem;
+  text-decoration:none;
+  display:inline-block;
+  font-weight:600;
+}
+.banner-btn:hover{background:#e6e6e6;}
+
+.banner-decor{
+  position:absolute;
+  top:15px;
+  right:20px;
+  width:120px;
+  height:120px;
+  background:url('/image\ copy\ 12.png') 
+             no-repeat center/contain;
+  opacity:.9;
+}
+
+@media(max-width:767.98px){
+  .info-card,
+  .banner-card{margin-bottom:1.5rem;}
+}
+
+.card {
+  border-radius: 12px;
+  background: #fff;
+}
+
+.custom-btn {
+  background-color: #00373E;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #00373E;
+  color: #fff;
 }
